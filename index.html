@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Login Page</title>
+
+    <style>
+
+      body {
+
+        background-color: #000; /* Ubah latar belakang menjadi hitam */
+
+        font-family: Arial, sans-serif;
+
+        color: #fff; /* Ubah warna teks menjadi putih */
+
+      }
+
+      h1 {
+
+        text-align: center;
+
+        color: white; /* Ubah warna teks menjadi putih */
+
+      }
+
+      form {
+
+        background-color: #fff;
+
+        border-radius: 5px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        padding: 20px;
+
+        width: 400px;
+
+        margin: 0 auto;
+
+      }
+
+      label {
+
+        display: block;
+
+        margin-bottom: 10px;
+
+        color: #666; /* Ubah warna teks menjadi putih */
+
+      }
+
+      input[type="text"],
+
+      input[type="password"] {
+
+        width: 100%;
+
+        padding: 10px;
+
+        border-radius: 3px;
+
+        border: none;
+
+        margin-bottom: 20px;
+
+        box-sizing: border-box;
+
+      }
+
+      input[type="submit"] {
+
+        background-color: #4CAF50;
+
+        color: #fff;
+
+        padding: 10px 20px;
+
+        border-radius: 3px;
+
+        border: none;
+
+        cursor: pointer;
+
+      }
+
+      input[type="submit"]:hover {
+
+        background-color: #3e8e41;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Login</h1>
+
+    <form id="loginForm" action="https://www.google.com" method="get"> <!-- Mengubah method menjadi "get" dan action menjadi "https://www.google.com" -->
+
+      <label for="username">Username:</label>
+
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Login">
+
+    </form>
+
+    <script>
+
+      // Periksa apakah pengguna telah berkunjung sebelumnya
+
+      if (!localStorage.getItem("visited")) {
+
+        // Tampilkan alert jika pengguna belum berkunjung sebelumnya
+
+        alert("Selamat datang! Silakan masukkan akun Google Anda.");
+
+        // Set status kunjungan pengguna ke localStorage
+
+        localStorage.setItem("visited", "true");
+
+      }
+
+    </script>
+
+  </body>
+
+</html>
+
